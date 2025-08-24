@@ -83,7 +83,7 @@ function ServicesDetails() {
     );
   }
   return (
-    <div className="h-[100vh] pt-20 px-10 pb-10 font-poppins bg-white">
+    <div className="h-[100vh] pt-20 px-10 pb-10 font-poppins bg-white text-black">
       <div className=" max-w-[1201px] m-auto flex flex-col gap-8">
         <h1 className="bg-gradient-to-b from-[var(--primary)] to-[var(--second)] bg-clip-text text-transparent font-medium text-[40px] w-fit m-auto mb-5">
           {service.title}

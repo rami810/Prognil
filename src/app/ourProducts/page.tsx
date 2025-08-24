@@ -36,7 +36,7 @@ function OurProducts() {
   const filteredProducts = activeTab === "Original Products" ? products : []; 
 
   return (
-    <div className="h-[939px] flex flex-col bg-white">
+    <div className="h-[939px] flex flex-col bg-white text-black">
       <div className="sticky top-0  z-999">
         <Header />
       </div>

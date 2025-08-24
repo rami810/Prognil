@@ -58,7 +58,7 @@ function Details() {
   }
 
   return (
-    <div className="h-[823px] overflow-hidden font-poppins bg-white">
+    <div className="h-[823px] overflow-hidden font-poppins bg-white text-black">
       <div className="w-full h-full relative">
         <div className="absolute z-[-10] top-[-365px] left-[962px] w-[732px] h-[763px] bg-[#0C74BC0F] rounded-full "></div>
 
