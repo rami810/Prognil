@@ -1,7 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Inter,
+  Poppins,
+  Roboto,
+  Outfit,
+} from "next/font/google";
 import "./globals.css";
+import Loading from "./loading";
+import OnlineWrapper from "./components/OnlineWrapper";
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-outfit",
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-inter",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-poppins",
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,9 +55,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} ${roboto.variable} ${outfit.variable} antialiased overflow-x-hidden`}
       >
-        {children}
+        <Loading />
+        <OnlineWrapper>{children}</OnlineWrapper>
       </body>
     </html>
   );

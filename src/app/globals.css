@@ -1,15 +1,14 @@
 @import "tailwindcss";
+@import "swiper/css";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --primary: #15cc70;
+  --second: #026bd3;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +22,108 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hover-gradient:hover {
+  background: linear-gradient(180deg, #15cc70 -34.62%, #026bd3 100%);
+  color: #fff;
+}
+
+.gradient-footer {
+  background: linear-gradient(185deg, #15cc70 -51.96%, #026bd3 153.57%);
+}
+.gradient-core {
+  background: linear-gradient(to bottom, var(--primary), var(--second));
+}
+
+.gradient {
+  background: linear-gradient(180deg, #15cc70 -34.62%, #026bd3 100%);
+}
+
+.overlay-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 204, 112, 0.15) 0%,
+    rgba(29, 100, 237, 0.18) 100%
+  );
+}
+
+.blue1 {
+  color: var(--second);
+}
+.blue-bg {
+  background-color: var(--second);
+}
+
+.gradient-ball {
+  background: radial-gradient(
+      55.84% 55.84% at 37.65% 25.18%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      133deg,
+      rgba(255, 255, 255, 0.23) 14.64%,
+      rgba(255, 255, 255, 0) 85.8%
+    ),
+    #026bd3;
+  filter: drop-shadow(50px 70px 100px rgba(0, 0, 0, 0.3));
+}
+
+.gradient-ball2 {
+  background: radial-gradient(
+      55.84% 55.84% at 37.65% 25.18%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      133deg,
+      rgba(255, 255, 255, 0.23) 14.64%,
+      rgba(255, 255, 255, 0) 85.8%
+    ),
+    rgba(12, 116, 188, 0.9);
+  filter: drop-shadow(50px 100px 100px rgba(0, 0, 0, 0.3));
+  border-radius: 50%;
+}
+
+.handleText h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: var(--font-poppins);
+}
+
+.handleText p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: var(--font-poppins);
+  padding-bottom: 20px;
+}
+
+.handleText ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
