@@ -1,21 +1,21 @@
 "use client";
-import {useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 
 function Loading() {
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
-  const totalImages = 3; 
-  let loaded = 0;
+  const totalImages = 3;
+  const loadedRef = useRef(0);
 
   const handleImageLoad = () => {
-    loaded++;
-    const percent = Math.round((loaded / totalImages) * 100);
+    loadedRef.current++;
+    const percent = Math.round((loadedRef.current / totalImages) * 100);
     setProgress(percent);
 
     if (percent === 100) {
-      setTimeout(() => setIsVisible(false), 500); 
+      setTimeout(() => setIsVisible(false), 500);
     }
   };
 
@@ -30,37 +30,31 @@ function Loading() {
       <div className="w-[626px] h-[758px] absolute top-[-293px] left-[-163px] flex justify-end items-end">
         <Image
           alt="left"
-          width={0}
-          height={0}
-          className="w-auto h-auto"
-          sizes="100vh"
           src="/images/all/LOADINGL.svg"
-          onLoadingComplete={handleImageLoad}
+          fill
+          className="object-contain"
+          onLoad={handleImageLoad}
         />
       </div>
 
       <div className="w-[626px] h-[758px] absolute top-[295px] left-[977px] flex justify-center items-start">
         <Image
-          width={0}
-          height={0}
-          className="w-auto h-auto"
-          sizes="100vh"
           alt="right"
           src="/images/all/loadingR.svg"
-          onLoadingComplete={handleImageLoad}
+          fill
+          className="object-contain"
+          onLoad={handleImageLoad}
         />
       </div>
 
       <div className="flex flex-col justify-center items-center gap-5 z-[10]">
-        <div className="w-[109px] h-[132px]">
+        <div className="w-[109px] h-[132px] relative">
           <Image
-            width={0}
-            height={0}
-            className="w-full h-full"
-            sizes="100vh"
             alt="center"
             src="/images/all/LoadingC.png"
-            onLoadingComplete={handleImageLoad}
+            fill
+            className="object-contain"
+            onLoad={handleImageLoad}
           />
         </div>
 
