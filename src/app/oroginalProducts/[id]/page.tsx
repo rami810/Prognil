@@ -221,12 +221,13 @@ function Details() {
               </span>
             </button>
 
-            <div className="absolute inset-0">
+            <div className="absolute w-full h-full inset-0">
               <Image
                 alt="popup"
                 src={product.demoLogo}
                 fill
-                className=" blur-[5px] "
+                className=" blur-[5px]"
+                priority
               />
               <div className="absolute flex flex-col text-white justify-center items-center  inset-0 bg-black/40 font-outfit ">
                 <h1 className=" w-fit flex justify-center items-center text-[70px]">
