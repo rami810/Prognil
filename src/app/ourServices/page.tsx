@@ -17,7 +17,7 @@ type Service = {
 function OurServices() {
   const searchParams = useSearchParams();
   const activeId = searchParams.get("active");
-  const shouldAnimate = searchParams.get("animate") === "true"; 
+  const shouldAnimate = searchParams.get("animate") === "true";
 
   const OurServicesData: Service[] = [
     {
@@ -57,7 +57,7 @@ function OurServices() {
       const index = OurServicesData.findIndex((item) => item.id === activeId);
       return index !== -1 ? index : 2;
     }
-    return 2; 
+    return 2;
   });
 
   const [screenCenterOffset, setScreenCenterOffset] = useState(0);
@@ -247,7 +247,7 @@ function ServiceCard({
         />
       </div>
 
-      <div className="ps-5 font-inter pe-10 flex flex-col gap-[3px] py-2">
+      <div className="ps-5 font-inter pe-10 flex flex-col gap-[1px] pt-2 ">
         <h1
           className={`text-[20px] font-semibold ${
             index === activeIndex ? "text-white" : "text-black"
@@ -265,7 +265,7 @@ function ServiceCard({
 
         {index === activeIndex && (
           <Link className="self-end" href={`/services/${service.id}`}>
-            <button className="mt-3 p-1 cursor-pointer font-semibold bg-transparent text-white border text-[10px] transition">
+            <button className="mt-3 p-1  cursor-pointer font-semibold bg-transparent text-white border text-[10px] transition">
               Read More
             </button>
           </Link>

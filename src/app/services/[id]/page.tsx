@@ -92,22 +92,26 @@ function ServicesDetails() {
 
         <div className="my-10">
           <h2 className="text-[35px] font-medium">{service.Ex}</h2>
-          <div className="flex gap-5 mt-5">
+
+          <div className="flex justify-center items-center gap-10 max-h-[54px] mt-5 max-w-[434px] ">
             {service.exphotos.map((photo, index) => (
-              <Image
-                key={index}
-                alt="example"
-                src={photo}
-                width={100}
-                height={100}
-              />
+              <div key={index} className="relative basis-1/3">
+                <Image
+                  alt="example"
+                  src={photo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto"
+                />
+              </div>
             ))}
           </div>
         </div>
         <p className="font-medium text-[20px]">
           {service.contact}{" "}
           <Link href="/contactUs" className="text-[#026BD3]">
-             Contact us now
+            Contact us now
           </Link>
         </p>
 
