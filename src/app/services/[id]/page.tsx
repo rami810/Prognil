@@ -103,6 +103,7 @@ function ServicesDetails() {
                   height={0}
                   sizes="100vw"
                   className="w-full h-auto"
+                  priority
                 />
               </div>
             ))}

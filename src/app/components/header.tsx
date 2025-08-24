@@ -34,6 +34,7 @@ function Header() {
             height={0}
             sizes="100vw"
             src="/images/logo/Asset 3@4x 1.png"
+            priority
           />
         </div>
 

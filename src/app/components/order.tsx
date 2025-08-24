@@ -112,6 +112,7 @@ function Order() {
               sizes="100vh"
               className="w-full h-full cursor-pointer"
               src="/images/all/Button.png"
+              priority
             />
           </button>
           <button
@@ -126,6 +127,7 @@ function Order() {
               sizes="100vh"
               className="w-full h-full cursor-pointer"
               src="/images/all/Button@2x.png"
+              priority
             />
           </button>
         </span>

@@ -81,6 +81,7 @@ function Aboutus({
               width={0}
               height={0}
               src="/images/all/aboutUs.gif"
+              priority
             />
           </div>
         </Container>

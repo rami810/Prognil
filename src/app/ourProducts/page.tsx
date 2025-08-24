@@ -107,6 +107,7 @@ function OurProducts() {
                       sizes="100vh"
                       alt={`product ${product.title}`}
                       src={product.cover}
+                      priority
                     />
                   </motion.div>
 

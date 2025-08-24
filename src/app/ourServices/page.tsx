@@ -188,6 +188,7 @@ function OurServices() {
                   alt="Previous"
                   width={50}
                   height={50}
+                  priority
                 />
               </button>
             ) : (
@@ -204,6 +205,7 @@ function OurServices() {
                   alt="Next"
                   width={50}
                   height={50}
+                  priority
                 />
               </button>
             ) : (
@@ -244,6 +246,7 @@ function ServiceCard({
           src={service.cover}
           width={0}
           height={0}
+          priority
         />
       </div>
 

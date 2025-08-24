@@ -23,7 +23,7 @@ function Details() {
       content2:
         "In this  step we begin with user journey from sign-up and login to progress tracking ,schedules and communicate with doctorand every thing user need during his journey.",
       phoTotop: "/images/all/Top (1).png",
-      photoBotom: "/images/all/bottom.png",
+      photoBotom: "/images/all/Bottom.svg",
       bolit1: "/images/all/Ellipse 113.svg",
       bolit2: "/images/all/Ellipse 114.svg",
       demoLogo: "/images/all/21039ffd725147cbfe54a81bf714c3878cbf0fcb.jpg",
@@ -41,7 +41,7 @@ function Details() {
       content2:
         "With built-in features for tracking contributions, redeeming rewards, and connecting with organizations, Supportify makes giving back simple, motivating, and rewarding. Designed for seamless implementation, it can be easily integrated into community programs, NGOs, and CSR initiatives to drive meaningful participation at scale.",
       phoTotop: "/images/all/Top.png",
-      photoBotom: "/images/all/bottom.png",
+      photoBotom: "/images/all/Bottom.svg",
       bolit1: "/images/all/Ellipse 113.svg",
       bolit2: "/images/all/Ellipse 114.svg",
       demoLogo: "/images/all/supportifybl.jpg",
@@ -66,8 +66,8 @@ function Details() {
           <div className="absolute inset-0 bg-[#0C74BC0F] rounded-full z-[-10]"></div>
 
           <div className="w-full h-full flex justify-end">
-          <Link href="/ourProducts?from=details">
-              <div className="relative top-[280px] right-[82px] w-[324px] h-[128px] group cursor-pointer z-10">
+            <div className="relative top-[280px] right-[82px] w-[324px] h-[128px] group cursor-pointer z-10">
+              <Link href="/ourProducts?from=details">
                 <div className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
                   <Image
                     alt="go back1"
@@ -76,7 +76,9 @@ function Details() {
                     height={0}
                     sizes="100vh"
                     className="w-full h-full"
+                    priority
                   />
+
                   <h1 className="absolute font-light bg-[#F2F8FD] blue1 top-[50%] right-[20px]">
                     Back To Products
                   </h1>
@@ -90,13 +92,15 @@ function Details() {
                     height={0}
                     sizes="100vh"
                     className="w-full h-full"
+                    priority
                   />
+
                   <h1 className="absolute text-[20px] bg-[#F2F8FD] blue1 top-[40%] right-[0px]">
                     Back To Products
                   </h1>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -115,6 +119,7 @@ function Details() {
                         className="object-contain"
                         fill
                         src="/images/all/lump.png"
+                        priority
                       />
                     </div>
                     <div className="flex flex-col gap-3 pt-5">
@@ -135,6 +140,7 @@ function Details() {
                       fill
                       className="object-contain"
                       src="/images/all/sss.png"
+                      priority
                     />
                   </div>
                   <div className="flex flex-col  pt-5 gap-3">
@@ -157,19 +163,19 @@ function Details() {
                   onClick={() => setIsOpen(true)}
                 >
                   <motion.div
-                    className="absolute left-[500px] top-[-47px] z-20 w-[100px] h-[100px] rounded-[50%] gradient-ball"
+                    className="absolute left-[500px] top-[-47px] w-[100px] h-[100px] rounded-[50%] gradient-ball z-[10]"
                     variants={{
-                      rest: { y: 0, zIndex: 20 },
-                      hover: { y: 350, zIndex: -10 },
+                      rest: { y: 0, zIndex: 1 },
+                      hover: { y: 350, zIndex: 0 },
                     }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                   />
 
                   <motion.div
-                    className="absolute left-[-65px] top-[317px] z-0 w-[100px] h-[100px] rounded-[50%] gradient-ball2"
+                    className="absolute left-[-65px] top-[317px] w-[100px] h-[100px] rounded-[50%] gradient-ball2 "
                     variants={{
-                      rest: { y: 0, zIndex: -10 },
-                      hover: { y: -350, zIndex: 20 },
+                      rest: { y: 0, zIndex: 0 },
+                      hover: { y: -350, zIndex: 1 },
                     }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                   />
@@ -179,10 +185,11 @@ function Details() {
                     alt="top"
                     src={product.phoTotop}
                     className="rounded-xl object-contain transition duration-300 group-hover:blur-[3px] brightness-75"
+                    priority
                   />
 
                   <div className="absolute inset-0 bg-black/40 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                    <span className="text-white text-[25px] font-medium w-[264px] h-[65px] flex justify-center items-center border-4  ">
+                    <span className="text-white text-[25px] font-medium w-[264px] h-[65px] flex justify-center items-center border-4">
                       See demo
                     </span>
                   </div>
@@ -193,6 +200,8 @@ function Details() {
                   height={12}
                   alt="bottom"
                   src={product.photoBotom}
+                  priority
+                  className="z-[1]"
                 />
               </div>
             </div>

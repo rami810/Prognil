@@ -34,6 +34,7 @@ function Loading() {
           fill
           className="object-contain"
           onLoad={handleImageLoad}
+          priority
         />
       </div>
 
@@ -44,6 +45,7 @@ function Loading() {
           fill
           className="object-contain"
           onLoad={handleImageLoad}
+          priority
         />
       </div>
 
@@ -55,6 +57,7 @@ function Loading() {
             fill
             className="object-contain"
             onLoad={handleImageLoad}
+            priority
           />
         </div>
 
