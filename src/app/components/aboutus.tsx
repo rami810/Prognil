@@ -21,7 +21,7 @@ function Aboutus({
 
   return (
     <div>
-      <div className="grid grid-cols-12 pt-[100px] px-[78px] bg-white">
+      <div className="grid grid-cols-12 pt-[100px] px-[78px">
         <Container
           className="col-span-6 h-full"
           {...(animate

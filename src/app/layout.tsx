@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} ${roboto.variable} ${outfit.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} ${roboto.variable} ${outfit.variable} bg-white antialiased overflow-x-hidden`}
       >
         <Loading />
         <OnlineWrapper>{children}</OnlineWrapper>
