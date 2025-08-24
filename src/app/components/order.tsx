@@ -96,7 +96,7 @@ function Order() {
   }, []);
 
   return (
-    <div className="h-[100vh] pt-[100px]">
+    <div className="h-[100vh] pt-[100px] bg-white">
       <div className="flex justify-between mb-10 px-20">
         <h1 className="font-poppios font-semibold text-[40px]">Core Values</h1>
         <span className="flex gap-10">

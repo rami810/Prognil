@@ -87,7 +87,7 @@ const innvationAndFuture = [
 
 function FAQ({ showButton = false }: FAQProps) {
   return (
-    <div>
+    <div className="bg-white">
       <div className="h-[440px] bg-[#F2F4F8] relative flex   items-center flex-col">
         {showButton && (
           <Link href="/" className="self-end">

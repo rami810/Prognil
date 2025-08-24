@@ -35,7 +35,7 @@ function Contact() {
   };
 
   return (
-    <div className="h-[1002px]">
+    <div className="h-[1002px] bg-white">
       <Header />
 
       <div className="w-full flex justify-center items-center">

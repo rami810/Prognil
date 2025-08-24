@@ -3,7 +3,7 @@ import Image from "next/image";
 import { oflineImage } from "@/assets";
 export default function OfflineScreen() {
   return (
-    <div className="flex items-center justify-center h-screen w-full p-10 relative ">
+    <div className="flex items-center justify-center h-screen w-full p-10 relative bg-white">
       <div className="absolute bottom-0 right-[15px]   ">
         <div className="relative w-auto h-[350px] ">
           <Image

@@ -4,7 +4,7 @@ import Button from "../components/button";
 
 export default function Terms() {
   return (
-    <div className="relative w-full flex flex-col min-h-screen overflow-hidden px-25 py-15">
+    <div className="relative w-full flex flex-col min-h-screen overflow-hidden px-25 py-15 bg-white">
  
       <div className="absolute top-0 left-0 flex justify-start items-start">
         <Image

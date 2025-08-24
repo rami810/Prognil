@@ -14,10 +14,8 @@ function OurProducts() {
   const searchParams = useSearchParams();
   const fromDetails = searchParams.get("from") === "details";
 
-  // Tabs
   const productKind = ["Original Products", "On-demand Products"];
 
-  // Products Data
   const products = [
     {
       id: "fe",
@@ -35,11 +33,10 @@ function OurProducts() {
     },
   ];
 
-  // Filtering
-  const filteredProducts = activeTab === "Original Products" ? products : []; // On-demand Products → فاضي
+  const filteredProducts = activeTab === "Original Products" ? products : []; 
 
   return (
-    <div className="h-[939px] flex flex-col">
+    <div className="h-[939px] flex flex-col bg-white">
       <div className="sticky top-0  z-999">
         <Header />
       </div>
