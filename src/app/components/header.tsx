@@ -1,9 +1,3 @@
-
-
-
-
-
-
 "use client";
 
 import Image from "next/image";
@@ -14,7 +8,7 @@ import Button from "./button";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/ourServices", label: "Our Services" }, 
+  { href: "/ourServices", label: "Our Services" },
   { href: "/ourProducts", label: "Our Products" },
   { href: "/contactUs", label: "Contact Us" },
 ];
@@ -25,25 +19,30 @@ function Header() {
   return (
     <header className="border-b-2 border-[#DDE1E6] bg-white py-[9.4px] ">
       <div className="grid grid-cols-12 items-center">
-        
-        <div className="col-span-2 grid justify-items-start ps-[80px]">
-          <Image
-            className="w-[60px] h-[78px]"
-            alt="Logo"
-            width={0}
-            height={0}
-            sizes="100vw"
-            src="/images/logo/Asset 3@4x 1.png"
-            priority
-          />
-        </div>
+        <Link
+          href="/"
+          className="col-span-2 grid justify-items-start ps-[80px]"
+        >
+          <div>
+            <Image
+              className="w-[60px] h-[78px]"
+              alt="Logo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              src="/images/logo/Asset 3@4x 1.png"
+              priority
+            />
+          </div>
+        </Link>
 
         <div className="col-span-7 text-[17px] font-inter">
           <ul className="flex justify-center pe-[30px] gap-[7%]">
             {links.map(({ href, label }) => {
               const isActive =
                 pathname === href ||
-                (href.startsWith("/ourServices") && pathname === "/ourServices");
+                (href.startsWith("/ourServices") &&
+                  pathname === "/ourServices");
 
               return (
                 <li key={href} className="relative group">
@@ -51,11 +50,15 @@ function Header() {
                     <Link
                       href={{
                         pathname: "/ourServices",
-                        query: { animate: "true" }, 
+                        query: { animate: "true" },
                       }}
                       className={`
                         transition-colors duration-300
-                        ${isActive ? "blue1" : "text-black group-hover:text-[var(--second)]"}
+                        ${
+                          isActive
+                            ? "blue1"
+                            : "text-black group-hover:text-[var(--second)]"
+                        }
                       `}
                     >
                       {label}
@@ -68,7 +71,11 @@ function Header() {
                       href={href}
                       className={`
                         transition-colors duration-300
-                        ${isActive ? "blue1" : "text-black group-hover:text-[var(--second)]"}
+                        ${
+                          isActive
+                            ? "blue1"
+                            : "text-black group-hover:text-[var(--second)]"
+                        }
                       `}
                     >
                       {label}
@@ -84,15 +91,14 @@ function Header() {
         </div>
 
         <div className="col-span-3 grid justify-items-end pe-[80px]">
-          <Button
-            title="Get Started"
-            clssName="
+          <Link href="/contactUs">
+            <Button
+              title="Get Started"
+              clssName="
               text-white 
               hover:border 
               border-transparent 
-
               hover:![background-image:none] hover:!bg-transparent 
-
               hover:text-[var(--second)] 
               hover:border-[var(--second)] 
               transition 
@@ -102,9 +108,9 @@ function Header() {
               text-[20px] 
               font-medium
             "
-          />
+            />
+          </Link>
         </div>
-
       </div>
     </header>
   );

@@ -37,7 +37,7 @@ function Aboutus({
             About Us
           </h1>
           <p className="font-poppins font-light max-w-[610px] text-[clamp(16px,2vw,23px)] text-[#000000B2]">
-            Welcome every one. We are PROGNIL. We specialize in developing
+            Welcome every one👋. We are PROGNIL. We specialize in developing
             cutting-edge websites and applications using advanced technologies
             like AI. Our focus is on delivering high-quality digital products
             with the latest designs and technical advancements. By leveraging

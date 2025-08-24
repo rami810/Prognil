@@ -27,8 +27,8 @@ function Home() {
             <h1 className="lg:text-[54px] md:text-[40px] px-5 text-center font-poppins font-bold ">
               The right place to expand your business
             </h1>
-            <p className="text-[#FFFFFFB2] font-poppin">
-              we provide you with Innovative Software Solutions
+            <p className="text-[#FFFFFFB2] font-poppins text-[25px]">
+            we provide you with Innovative Software Solutions for a Digital World
             </p>
 
             <span className="flex fle-col gap-4">

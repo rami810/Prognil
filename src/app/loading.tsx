@@ -23,7 +23,7 @@ function Loading() {
 
   return (
     <div
-      className={`loading-screen h-screen fixed z-[10000] top-0 left-0 bg-white w-full flex justify-center items-center transition-opacity duration-700 ${
+      className={`loading-screen h-screen fixed z-[10000] top-0 left-0 bg-white w-full text-black flex justify-center items-center transition-opacity duration-700 ${
         progress >= 100 ? "opacity-0" : "opacity-100"
       }`}
     >
