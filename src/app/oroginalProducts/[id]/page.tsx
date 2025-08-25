@@ -26,8 +26,9 @@ function Details() {
       photoBotom: "/images/all/Bottom.svg",
       bolit1: "/images/all/Ellipse 113.svg",
       bolit2: "/images/all/Ellipse 114.svg",
-      demoLogo: "/images/all/21039ffd725147cbfe54a81bf714c3878cbf0fcb.jpg",
-      demoImages: ["/images/all/demo1.png", "/images/all/demo2.png"],
+      demoLogo: "/images/all/flexara.jpg",
+
+      // demoImages: ["/images/all/demo1.png", "/images/all/demo2.png"],
     },
     {
       id: "sup",
@@ -45,7 +46,7 @@ function Details() {
       bolit1: "/images/all/Ellipse 113.svg",
       bolit2: "/images/all/Ellipse 114.svg",
       demoLogo: "/images/all/supportifybl.jpg",
-      demoImages: ["/images/all/demo3.png", "/images/all/demo4.png"],
+      // demoImages: ["/images/all/demo3.png", "/images/all/demo4.png"],
     },
   ];
 
@@ -212,7 +213,7 @@ function Details() {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[1]">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[1000]">
           <div className="relative w-[1000px] h-[600px] rounded-lg overflow-hidden">
             <button
               onClick={() => setIsOpen(false)}
