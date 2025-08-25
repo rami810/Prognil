@@ -212,7 +212,7 @@ function Details() {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[1]">
           <div className="relative w-[1000px] h-[600px] rounded-lg overflow-hidden">
             <button
               onClick={() => setIsOpen(false)}
