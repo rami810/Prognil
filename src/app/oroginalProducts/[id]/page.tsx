@@ -195,14 +195,14 @@ function Details() {
                   </div>
                 </motion.div>
 
-                <div className="relative w-full h-full">
+                <div className="relative w-[674] h-[12px]">
                   <Image
                     width={0}
                     height={0}
                     alt="bottom"
                     src={product.photoBotom}
                     priority
-                    className="z-[1] w-auto h-auto "
+                    className="z-[1] w-full h-full"
                   />
                 </div>
               </div>
