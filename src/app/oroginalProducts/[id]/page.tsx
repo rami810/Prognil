@@ -27,8 +27,6 @@ function Details() {
       bolit1: "/images/all/Ellipse 113.svg",
       bolit2: "/images/all/Ellipse 114.svg",
       demoLogo: "/images/all/flexara.jpg",
-
-      // demoImages: ["/images/all/demo1.png", "/images/all/demo2.png"],
     },
     {
       id: "sup",
@@ -45,8 +43,7 @@ function Details() {
       photoBotom: "/images/all/Bottom.svg",
       bolit1: "/images/all/Ellipse 113.svg",
       bolit2: "/images/all/Ellipse 114.svg",
-      demoLogo: "/images/all/supportifybl.jpg",
-      // demoImages: ["/images/all/demo3.png", "/images/all/demo4.png"],
+      demoLogo: "/images/all/supportify.jpg",
     },
   ];
 
