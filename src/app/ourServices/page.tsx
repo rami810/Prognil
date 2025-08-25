@@ -108,10 +108,10 @@ function OurServices() {
   };
 
   return (
-    <div>
+    <div className="min-h-[100vh] bg-white">
       <Header />
 
-      <div className="bg-[#F2F4F8] text-black">
+      <div className="bg-[#F2F4F8] text-black pb-5">
         <motion.h1
           initial={
             shouldAnimate ? { y: -100, opacity: 0 } : { y: 0, opacity: 1 }

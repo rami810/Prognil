@@ -60,10 +60,10 @@ function Details() {
   return (
     <div className="h-[823px] overflow-hidden font-poppins bg-white text-black">
       <div className="w-full h-full relative">
-        <div className="absolute z-[-10] top-[-365px] left-[962px] w-[732px] h-[763px] bg-[#0C74BC0F] rounded-full "></div>
+        <div className="absolute z-[0] top-[-365px] left-[962px] w-[732px] h-[763px] bg-[#0C74BC0F] rounded-full "></div>
 
-        <div className="absolute top-[386px] left-[-327px] w-[732px] h-[763px] rounded-full">
-          <div className="absolute inset-0 bg-[#0C74BC0F] rounded-full z-[-10]"></div>
+        <div className="absolute top-[386px] bg-[#0C74BC0F] left-[-327px] w-[732px] h-[763px] rounded-full">
+          <div className="absolute inset-0  rounded-full z-[-10]"></div>
 
           <div className="w-full h-full flex justify-end">
             <div className="relative top-[280px] right-[82px] w-[324px] h-[128px] group cursor-pointer z-10">
@@ -154,7 +154,7 @@ function Details() {
             </div>
 
             <div className="col-span-6 justify-items-start content-center mt-20 ">
-              <div className="flex flex-col relative   lg:me-70">
+              <div className="flex flex-col justify-center items-center relative   lg:me-70">
                 <motion.div
                   className="relative w-[545px] h-[361px] group cursor-pointer"
                   whileHover="hover"
@@ -196,12 +196,12 @@ function Details() {
                 </motion.div>
 
                 <Image
-                  width={674}
-                  height={12}
+                  width={0}
+                  height={0}
                   alt="bottom"
                   src={product.photoBotom}
                   priority
-                  className="z-[1]"
+                  className="z-[1] w-full h-full"
                 />
               </div>
             </div>

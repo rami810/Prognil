@@ -42,7 +42,7 @@ function Home() {
               <Link href="/contactUs">
                 <button className="w-[160px] h-[56px] cursor-pointer py-4 border-3 bg-transparent hover:[background:linear-gradient(180deg,#15CC70_-34.62%,#026BD3_100%)] hover:border-0 hover:py-[18.5px]">
                   {" "}
-                  Contsct Us{" "}
+                  Contact Us{" "}
                 </button>
               </Link>
             </span>
