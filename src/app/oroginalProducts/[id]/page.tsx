@@ -154,7 +154,7 @@ function Details() {
             </div>
 
             <div className="col-span-6 justify-items-start content-center mt-20 ">
-              <div className="flex flex-col justify-center items-center relative   lg:me-70">
+              <div className="flex flex-col  justify-center items-center relative   lg:me-70">
                 <motion.div
                   className="relative w-[545px] h-[361px] group cursor-pointer"
                   whileHover="hover"
@@ -195,14 +195,16 @@ function Details() {
                   </div>
                 </motion.div>
 
-                <Image
-                  width={0}
-                  height={0}
-                  alt="bottom"
-                  src={product.photoBotom}
-                  priority
-                  className="z-[1] w-full h-full"
-                />
+                <div className="relative w-full h-full">
+                  <Image
+                    width={0}
+                    height={0}
+                    alt="bottom"
+                    src={product.photoBotom}
+                    priority
+                    className="z-[1] w-auto h-auto "
+                  />
+                </div>
               </div>
             </div>
           </div>
