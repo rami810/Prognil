@@ -151,7 +151,7 @@ function Details() {
               </div>
             </div>
 
-            <div className="col-span-6  justify-items-end  content-center  me-30  ">
+            <div className="col-span-6  justify-items-end  content-center  me-32  ">
               <div className="flex flex-col w-fit justify-center items-center relative  ">
                 <motion.div
                   className="relative w-[545px] h-[361px] group cursor-pointer"
