@@ -103,7 +103,7 @@ function Details() {
         </div>
 
         <div className="w-full ps-20 pt-10">
-          <div className="grid grid-cols-12">
+          <div className="grid gap-30 grid-cols-12">
             <div className="col-span-6">
               <div className="flex flex-col gap-5">
                 <div>
@@ -151,8 +151,8 @@ function Details() {
               </div>
             </div>
 
-            <div className="col-span-6 justify-items-start content-center mt-20 ">
-              <div className="flex flex-col  justify-center items-center relative   lg:me-70">
+            <div className="col-span-6  justify-items-end  content-center  me-30  ">
+              <div className="flex flex-col w-fit justify-center items-center relative  ">
                 <motion.div
                   className="relative w-[545px] h-[361px] group cursor-pointer"
                   whileHover="hover"
@@ -193,7 +193,7 @@ function Details() {
                   </div>
                 </motion.div>
 
-                <div className="relative w-[674] h-[12px]">
+                <div className="relative w-[674] -h-[12px]">
                   <Image
                     width={0}
                     height={0}

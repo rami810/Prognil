@@ -96,7 +96,7 @@ function Order() {
   }, []);
 
   return (
-    <div className="h-[100vh] pt-[100px] bg-white text-black">
+    <div className="min-h-[100vh] pt-[100px] bg-white text-black">
       <div className="flex justify-between mb-10 px-20">
         <h1 className="font-poppios font-semibold text-[40px]">Core Values</h1>
         <span className="flex gap-10">
@@ -152,6 +152,7 @@ function Order() {
                     height={49}
                     src={order.logo}
                     alt={order.title}
+                    priority
                   />
                   <h1 className="font-roboto text-[20px] font-extrabold text-[#475569]">
                     {order.title}
